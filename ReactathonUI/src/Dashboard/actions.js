@@ -13,7 +13,7 @@ export const fetchEventsFailure = createAction(FETCH_EVENTS_REQUEST_FAILURE, 'er
 
 let api_input = {"query": " query{allevents(orderBy:eventName_ASC){eventName,eventId,startDate,endDate,imageURL,readMoreContent,deliverables,faqs{qes,ans},leaderboards{participants,rank,totalScore,attempts,lastSubmitted}}}"}
 
-let api_comment_input = {"query": "query{  alldiscussions(orderBy:user_ASC) {   Qus,    user,    dated}}"}
+let api_comment_input = {"query": "query{alldiscussions(orderBy:user_ASC) {Qus,user,dated}}"}
 
 
 export function FetchEvents () {
