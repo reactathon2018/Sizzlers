@@ -17,6 +17,12 @@ const project = new Project([{
     leaderboards : [leaderboard] @relation
 }
 
+type discussion @rootEntity {     
+user: String
+Qus : String
+dated:String
+
+}
 
 type faq @rootEntity {     
   qes : String
