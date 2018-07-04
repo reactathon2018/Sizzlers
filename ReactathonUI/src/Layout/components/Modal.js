@@ -17,7 +17,7 @@ export default function Modal({ children, title = '', overlayStyle = {}, content
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
       width: '30%',
-      height: '300px'
+      height: '320px'
     }
   };
 

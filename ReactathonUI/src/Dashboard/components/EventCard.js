@@ -63,8 +63,12 @@ class EventCard extends Component {
           <div> <img src={data.get('imageURL')} alt='img' className='responsive-image' /></div>
           <div className='event_name'> {data.get('eventName')}</div>
           <span className="text_trim"> {data.get('readMoreContent')}</span>
-          <div className='pull-left' style={{marginTop: '25px'}}> <i class="fa fa-calendar" aria-hidden="true" style={{color : 'green'}}></i> Start Date : {data.get('startDate')}</div>
-          <div className='pull-left' style={{marginTop: '5px'}}> <i class="fa fa-calendar" aria-hidden="true" style={{color : 'orange'}}></i> Completion Date : {data.get('endDate')}</div>
+          <div className='pull-left' style={{marginTop: '25px'}}> 
+          
+          <i class="fa fa-calendar" aria-hidden="true" style={{color : 'green'}}></i> Start Date : {data.get('startDate')} <br/>
+          <i class="fa fa-calendar" aria-hidden="true" style={{color : 'orange' , marginTop : '5px', marginLeft : '15px'}}></i> Completion Date : {data.get('endDate')}
+          </div>
+          
           <div className="content_box_footer"> Learn More</div>
         </div>
         {this.state.openModal ? this.renderModal() : null}

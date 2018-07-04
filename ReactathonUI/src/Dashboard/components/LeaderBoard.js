@@ -5,6 +5,7 @@ class LeaderBoard extends Component {
         let rows = []
         this.props.data.forEach(element => {
             rows.push(<tr>
+                
                 <td>{element.get('participants')}</td>
                 <td>{element.get('totalScore')}</td>
                 <td>{element.get('attempts')}</td>
